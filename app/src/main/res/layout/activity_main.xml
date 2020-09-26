@@ -66,6 +66,7 @@
         android:id="@+id/textView"
         android:layout_width="224dp"
         android:layout_height="0dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:alpha=".8"
         android:gravity="center_horizontal"
