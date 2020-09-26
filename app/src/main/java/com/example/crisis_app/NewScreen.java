@@ -20,6 +20,9 @@ public class NewScreen extends AppCompatActivity {
         setContentView(R.layout.login);
 
         Button = (Button)findViewById(R.id.button3) ;
+        //Added Functionality to Forgot User & Pass.
+        TextView ForgotPassword = (TextView)findViewById(R.id.text2) ;
+        TextView ForgotUsername = (TextView)findViewById(R.id.text) ;
         Email = (EditText)findViewById(R.id.editTextTextEmailAddress) ;
         Password = (EditText)findViewById(R.id.editTextTextPassword) ;
 
@@ -30,5 +33,22 @@ public class NewScreen extends AppCompatActivity {
                 Log.d("EditText", Password.getText().toString()) ;
             }
         });
+
+        //Activity for Forgot Username.
+        ForgotUsername.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("TextView", "Username Forgotten!") ;
+            }
+        });
+
+        //Activity for Forgot Password.
+        ForgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("TextView", "Password Forgotten!") ;
+            }
+        });
+
     }
 }
