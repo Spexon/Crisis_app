@@ -17,17 +17,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button next = (Button)findViewById(R.id.button) ;
+        Button createAccount = (Button)findViewById(R.id.button2);
+
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(v.getContext(), NewScreen.class) ;
                 startActivityForResult(myIntent, 0) ;
+                Log.d(LOG_TAG, "Button pressed!") ;
             }
         });
-    }
 
-    public void launchSecondActivity(View view)
-    {
-        Log.d(LOG_TAG, "Button pressed!") ;
+        createAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(LOG_TAG, "Creating Account!") ;
+            }
+        });
     }
 }
