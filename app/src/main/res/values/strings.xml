@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Crisis_app</string>
+
+    <string-array name="roles">
+        <item>Student</item>
+        <item>Faculty</item>
+        <item>Security</item>
+    </string-array>
+
+
 </resources>
