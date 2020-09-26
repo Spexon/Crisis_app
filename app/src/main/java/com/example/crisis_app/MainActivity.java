@@ -11,18 +11,31 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
+
     String LOG_TAG = MainActivity.class.getSimpleName() ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        Button createAccountBtn = (Button)findViewById(R.id.create_account_btn);
+        createAccountBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(v.getContext(), Signup.class);
+                startActivityForResult(myIntent, 0);
+            }
+        });      
+          
         Button next = (Button)findViewById(R.id.button) ;
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(v.getContext(), NewScreen.class) ;
-                startActivityForResult(myIntent, 0) ;
+                startActivityForResult(myIntent, 0);
+
             }
         });
     }
@@ -30,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
     public void launchSecondActivity(View view)
     {
         Log.d(LOG_TAG, "Button pressed!") ;
+
 
         setContentView(R.layout.signup);
 
