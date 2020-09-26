@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //Activity for Create Account Button.
         createAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
