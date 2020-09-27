@@ -2,6 +2,14 @@
 
 An app targetted to students and faculty at middleschools, highschools, and universities. This app is worked on during the ShellHacks 2020 Hackathon
 
+## Authors
+<ul>
+  <li> Vladimir Hardy (Spexon)</li>
+  <li> Paul Basso (Pab1311) </li>
+  <li> John Sehuwerert (JohnS3223) </li>
+  <li> Jordan Tatum (Hexseral)</li>
+</ul>
+
 ## Demonstation 
 
 
