@@ -1,10 +1,12 @@
 package com.example.crisis_app;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -14,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Signup extends AppCompatActivity {
 
     Spinner spinner;
+    Button signupBtn;
 
     /** Called when the activity is first created. */
     public void onCreate(Bundle savedInstanceState) {
@@ -29,6 +32,15 @@ public class Signup extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
         spinner.setAdapter(adapter);
+
+        signupBtn = findViewById(R.id.signup_btn);
+        signupBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick (View v){
+                Intent myIntent = new Intent(v.getContext(), LoginScreen.class);
+                startActivityForResult(myIntent, 0);
+            }
+        });
 
     }
 
