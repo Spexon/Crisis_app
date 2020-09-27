@@ -32,7 +32,7 @@ public class WelcomeWindow extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(v.getContext(), NewScreen.class) ;
+                Intent myIntent = new Intent(v.getContext(), LoginScreen.class) ;
                 startActivityForResult(myIntent, 0);
 
             }
