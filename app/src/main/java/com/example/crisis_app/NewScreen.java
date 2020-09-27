@@ -2,6 +2,7 @@ package com.example.crisis_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -11,6 +12,8 @@ import android.widget.TextView;
 
 public class NewScreen extends AppCompatActivity {
 
+     String fakeUserEmail1 = "hackathon@yahoo.com";
+     String fakeUserPassword1 = "ShellHacks2020";
      Button Button ;
      EditText Email ;
      EditText Password ;
@@ -28,7 +31,17 @@ public class NewScreen extends AppCompatActivity {
             public void onClick(View v) {
                 Log.d("EditText", Email.getText().toString()) ;
                 Log.d("EditText", Password.getText().toString()) ;
+
+                if ((Email.getText().toString().equalsIgnoreCase(fakeUserEmail1)) && (Password.getText().toString().equals(fakeUserPassword1))) {
+                    System.out.println("Access Granted!");
+                    Intent myIntent = new Intent(v.getContext(), MainWindow.class);
+                    startActivityForResult(myIntent, 0);
+                }
             }
         });
+
+
+
+
     }
 }
