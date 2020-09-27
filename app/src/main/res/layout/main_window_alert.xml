@@ -6,6 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/background">
 
+
     <!--<fragment
         android:id="@+id/fragments"
         android:layout_width="match_parent"
@@ -46,69 +47,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <Button
-                android:id="@+id/button1"
-                android:layout_width="match_parent"
-                android:layout_height="78dp"
-                android:layout_marginBottom="15dp"
-                android:text="Resource" />
-
-            <Button
-                android:id="@+id/button21"
-                android:layout_width="match_parent"
-                android:layout_height="78dp"
-                android:layout_marginBottom="15dp"
-                android:text="Resource" />
-
-            <Button
-                android:id="@+id/button22"
-                android:layout_width="match_parent"
-                android:layout_height="78dp"
-                android:layout_marginBottom="15dp"
-                android:text="Resource" />
-
-            <Button
-                android:id="@+id/button23"
-                android:layout_width="match_parent"
-                android:layout_height="78dp"
-                android:layout_marginBottom="15dp"
-                android:text="Resource" />
-
-            <Button
-                android:id="@+id/button24"
-                android:layout_width="match_parent"
-                android:layout_height="78dp"
-                android:layout_marginBottom="15dp"
-                android:text="Resource" />
-
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="match_parent"
-                android:layout_height="78dp"
-                android:layout_marginBottom="15dp"
-                android:text="Resource" />
-
-            <Button
-                android:id="@+id/button26"
-                android:layout_width="match_parent"
-                android:layout_height="78dp"
-                android:layout_marginBottom="15dp"
-                android:text="Resource" />
-
-            <Button
-                android:id="@+id/button27"
-                android:layout_width="match_parent"
-                android:layout_height="78dp"
-                android:layout_marginBottom="15dp"
-                android:text="Resource" />
-
-            <Button
-                android:id="@+id/button28"
-                android:layout_width="match_parent"
-                android:layout_height="78dp"
-                android:layout_marginBottom="15dp"
-                android:text="Resource" />
 
         </LinearLayout>
     </ScrollView>
@@ -174,10 +112,7 @@
             android:icon="@drawable/profile_symbol" />
 
 
-
     </com.google.android.material.tabs.TabLayout>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
