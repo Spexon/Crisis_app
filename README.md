@@ -1,6 +1,6 @@
 # Crisis_app
 
-An app targetted to students and faculty at middleschools, highschools, and universities. The intended purpose of this application was to give its users the ability to easily alert different crisis events and notify all users about current and resolved issues. There would also be a section related to educating people about what to do during different events. This app was worked on during the ShellHacks 2020 Hackathon.
+An app targeted to students and faculty at middle schools, high schools, and universities. The intended purpose of this application was to give its users the ability to easily alert different crisis events and notify all users about current and resolved issues. There would also be a section related to educating people about what to do during a range of events. This app was worked on during the ShellHacks 2020 Hackathon.
 
 ## Authors
 <ul>
